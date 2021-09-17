@@ -1,5 +1,5 @@
-#FROM
-#USER
+FROM python:2.7-stretch
+USER root
 # uWSGI:
 RUN pip install uwsgi
 # Copy the base uWSGI ini file to enable default dynamic uwsgi process number
