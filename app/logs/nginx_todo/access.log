@@ -1,0 +1,2 @@
+192.168.65.1 - - [19/Sep/2021:06:11:46 +0000] "GET / HTTP/1.1" 200 23 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36"
+192.168.65.1 - - [19/Sep/2021:06:11:46 +0000] "GET /favicon.ico HTTP/1.1" 200 23 "http://192.168.65.20:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36"

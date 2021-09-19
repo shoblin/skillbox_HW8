@@ -4,6 +4,10 @@ USER root
 RUN pip install uwsgi
 # Copy the base uWSGI ini file to enable default dynamic uwsgi process number
 COPY ./uwsgi.ini /etc/uwsgi/
+# Copy the python script
+USER root
+RUN mkdir -p /var/www/todo
+COPY ./wsgi.py /var/www/todo/
 # Which uWSGI .ini file should be used, to make it customizable
 ENV UWSGI_INI /etc/uwsgi/uwsgi.ini
 # By default, run 2 processes
@@ -72,4 +76,4 @@ ARG WORK_DIR=/var/www
 RUN usermod -u 1000 www-data
 WORKDIR ${WORK_DIR}
 CMD [ "uwsgi" ]
-#PORT
+EXPOSE 9000 
